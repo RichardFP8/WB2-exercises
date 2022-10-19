@@ -12,14 +12,14 @@ if (hours > 40){
     gross = payRate * 40;               //getting the  <= 40 hours done already 
     extraHours =  hours - 40;     //finding the extra hours
     incrRate = payRate * 1.5;           //finding the incresd rate 
-    gross += (extraHours * incrRate);
-    console.log("You worked " + hours + " hours. This is your gross pay: " + gross);
+    gross += (extraHours * incrRate);     //adding the increased pay into gross
+    console.log("You worked " + hours + " hours and get payed $" +  payRate + " per hour. This is your gross pay: $" + gross);
 }
-if (hours == 40) {
+else if (hours == 40) {
     gross += (hours * payRate);
-    console.log("You worked exactly 40. This is your gross pay: " + gross);
+    console.log("You worked exactly 40and get payed $" +  payRate + " per hour. This is your gross pay: $" + gross);
 }
 else {
     gross += (hours * payRate);
-    console.log("You worked " + hours + " hours. This is your gross pay: " + gross);
+    console.log("You worked " + hours + " hours and get payed $" +  payRate + " per hour. This is your gross pay: $" + gross);
 }
