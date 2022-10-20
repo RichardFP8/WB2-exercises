@@ -2,11 +2,11 @@
 
 //inputs
 var payRate = 17.30;
-var hours = 45;
+var hours = 34;
 
 //get the extra inputs for overtime
-var gross = 1;
-var extraHours = 0;
+var gross;
+var extraHours;
 var incrRate = 1;
 
 if (hours > 40){
@@ -21,7 +21,7 @@ else if (hours == 40) {
     console.log("You worked exactly 40and get payed $" +  payRate + " per hour. This is your gross pay: $" + gross);
 }
 else {
-    gross += (hours * payRate);
+    gross = (hours * payRate);
     console.log("You worked " + hours + " hours and get payed $" +  payRate + " per hour. This is your gross pay: $" + gross);
 }
 
@@ -29,7 +29,7 @@ else {
 
 //inputs
 var annual = (gross * 4) * 12; //ANNUAL
-var filer = "single";
+var filer = "joint";
 var taxRate = 1;
 
 //file for single; finding the taxRate

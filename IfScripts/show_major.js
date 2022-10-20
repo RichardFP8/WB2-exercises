@@ -1,7 +1,7 @@
 "use strict";
 //define 2 variables
 var studentName = "Bob";
-var studentMajor = "ENG";
+var studentMajor = "HIST";
 
 console.log("Student: " + studentName);
 //finding the advising room based on major
